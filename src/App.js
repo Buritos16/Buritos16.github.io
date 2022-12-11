@@ -413,7 +413,7 @@ function App() {
                         </div>
                         <div className='hits' onClick={handeClickRefHits}>
                             <a onClick={handeClickRefHits}
-                               style={{color: "white", cursor: "pointer", width: "400px"}}>Перейти к Хитам продаж</a>
+                               style={{color: "white", cursor: "pointer",}}>Перейти к Хитам продаж</a>
                         </div>
                         <div className='arrow' onClick={handeClickRefHits}>
                             <svg className='arrow-svg' fill='#ffffff' x="0px" y="0px" width="38.417px"
