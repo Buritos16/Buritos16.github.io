@@ -351,7 +351,7 @@ function App() {
             <div className='header'>
                 <div className='navbar'>
                     <div className='navbar-content'>
-                        <a style={{color: "white", fontWeight: "bold", display: "table-cell", width: 117, position: "absolute"}}
+                        <a className='name' style={{color: "white", fontWeight: "bold", display: "table-cell", width: 117, position: "absolute"}}
                            href='/'><strong>Cloud-Sushi</strong></a>
                         <div style={{display: "table-cell", position: "relative", left: '11%'}}>
                             <ul className='menu-computer'>
