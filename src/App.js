@@ -372,6 +372,7 @@ function App() {
                                        onClick={handeClickRefContacts}>Контакты</a>
                                 </li>
                             </ul>
+                        </div>
                             <div className='menu-phone'>
                                 <MenuOutlined onClick={handleClickDropdown} style={{cursor: "pointer", zIndex: 1}} />
                                 <div id='dropdown' className='dropdown'>
@@ -394,7 +395,7 @@ function App() {
                                 </div>
 
                             </div>
-                        </div>
+
                     </div>
                 </div>
 

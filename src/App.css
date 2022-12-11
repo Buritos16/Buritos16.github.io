@@ -102,7 +102,6 @@ a {
 
 .menu-phone {
     display: none;
-    margin-right: 10%;
 }
 
 
@@ -110,8 +109,8 @@ a {
     .menu-phone {
         display: inline;
         float: right;
-        min-width: 150px;
-        margin-right: 10%;
+        min-width: 27%;
+        position: relative;
     }
     .name {
         top: 2.5%
