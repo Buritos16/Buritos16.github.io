@@ -351,9 +351,9 @@ function App() {
             <div className='header'>
                 <div className='navbar'>
                     <div className='navbar-content'>
-                        <a className='name' style={{color: "white", fontWeight: "bold", display: "table-cell", width: 117, position: "absolute"}}
+                        <a className='name' style={{color: "white", fontWeight: "bold", display: "table-cell", width: 117, position: "absolute", left: '12%'}}
                            href='/'><strong>Cloud-Sushi</strong></a>
-                        <div style={{display: "table-cell", position: "relative", left: '21%', maxWidth: 700}}>
+                        <div style={{display: "table-cell", position: "relative", left: '13%', maxWidth: '65%'}}>
                             <ul className='menu-computer'>
                                 <li style={{display: "inline", paddingRight: 15}}>
                                     <a className='lishka' style={{color: "white", cursor: "pointer"}}
@@ -374,8 +374,8 @@ function App() {
                             </ul>
                         </div>
                             <div className='menu-phone'>
-                                <MenuOutlined onClick={handleClickDropdown} style={{cursor: "pointer", zIndex: 1}} />
-                                <div id='dropdown' className='dropdown'>
+                                <MenuOutlined onClick={handleClickDropdown} style={{cursor: "pointer", zIndex: 1, textAlign: "center", position: "relative", left: '10%'}} />
+                                <div id='dropdown' className='dropdown' >
                                     <div>
                                         <a className='lishka' style={{color: "white", cursor: "pointer"}}
                                        onClick={handeClickRefAbout}>О нас</a>

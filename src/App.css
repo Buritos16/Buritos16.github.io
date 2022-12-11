@@ -43,7 +43,7 @@ a {
     padding-left: 40px;
     padding-top: 22px;
     border: 0;
-    max-width: 500px;
+    max-width: 60%;
     margin: 0 10%;
 }
 
@@ -108,15 +108,16 @@ a {
 @media only screen and (max-width: 768px) {
     .menu-phone {
         display: inline;
+        text-align: center;
+        width: auto;
+        max-width: 35%;
         float: right;
-        min-width: 27%;
-        position: relative;
     }
     .name {
         top: 2.5%
     }
     .navbar-content {
-        margin: 1% 0;
+
     }
 }
 
@@ -132,13 +133,15 @@ a {
 }
 
 .dropdown1 {
+    margin: 0;
+    width: 100%;
     z-index: 1;
     text-align: center;
     padding: 10px;
     display: block;
     position: relative;
-    right: 40%;
-    top: 18px;
+    right: 0;
+    top: 23px;
     background-color: rgba(26, 26, 26, 0.6);
 }
 
