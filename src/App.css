@@ -66,6 +66,7 @@ a {
     margin: auto;
     max-width: 660px;
     bottom: 36.7%;
+
 }
 
 .cloud-sushi {
@@ -96,6 +97,48 @@ a {
     color: #fff;
     padding: 15px 0 30px 0;
     opacity: 1;
+}
+
+.menu-computer {
+    display: inline;
+    padding-left: 30px;
+}
+
+.menu-phone {
+    display: none;
+    margin-right: 10%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .menu-phone {
+        display: inline;
+        float: right;
+        min-width: 150px;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-computer {
+        display: none;
+    }
+}
+
+
+.dropdown {
+    display: none;
+}
+
+.dropdown1 {
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    position: relative;
+    right: 40%;
+    top: 18px;
+    background-color: rgba(26, 26, 26, 0.6);
 }
 
 .hits {
@@ -232,8 +275,6 @@ a {
 }
 
 
-
-
 .sets {
     border: 0;
     margin: 0 auto;
@@ -316,14 +357,15 @@ a {
     font-family: 'Neucha', Arial, sans-serif;
     font-weight: 300;
 }
- .menu {
-     text-align: center;
-     display: inline;
-     padding-left: 180px;
-     padding-right: 180px;
-     width: 100%;
-     max-width: 1200px;
- }
+
+.menu {
+    text-align: center;
+    display: inline;
+    padding-left: 180px;
+    padding-right: 180px;
+    width: 100%;
+    max-width: 1200px;
+}
 
 .menu2 {
     padding-top: 135px;
@@ -468,7 +510,7 @@ a {
 
 
 .male-shop {
-    position:-webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
     bottom: 78vh;
     float: right;
@@ -488,7 +530,7 @@ a {
 }
 
 .animation {
-    position:-webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
     bottom: 78vh;
     float: right;
@@ -531,7 +573,7 @@ a {
     font-family: 'Neucha', Arial, sans-serif;
     font-weight: 600;
     line-height: 1.35;
-    position:-webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
     bottom: 76.8vh;
     margin-right: 1.2%;
@@ -563,10 +605,13 @@ a {
 }
 
 @keyframes ani {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-
 
 
 @keyframes pulse {
@@ -606,7 +651,6 @@ a {
     font-weight: 100;
     margin: 20px 0 0;
 }
-
 
 
 .modal-buy {

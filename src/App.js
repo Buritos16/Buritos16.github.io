@@ -1,5 +1,6 @@
 import './App.css';
 import {Modal} from "antd";
+import {MenuOutlined} from '@ant-design/icons'
 import {useForm} from 'react-hook-form'
 import {useEffect, useRef, useState} from "react";
 import Menu1 from "./Menu1";
@@ -38,6 +39,7 @@ function App() {
     const products = useSelector(state => state.shop.data)
     const [isPriceShown, setIsPriceShown] = useState(false)
     const [isModalOpen, setIsModalOpen] = useState(false)
+    const [isDropdonwOpen, setIsDropdonwOpen] = useState(false)
 
     const handeClickRefAbout = () => {
         refAbout.current?.scrollIntoView({behavior: 'smooth'});
@@ -64,6 +66,15 @@ function App() {
         setTimeout(() => {
             document.getElementById('animation').className = 'male-shop'
         }, 600)
+    }
+
+    const handleClickDropdown = () => {
+        setIsDropdonwOpen(!isDropdonwOpen)
+        if(isDropdonwOpen) {
+            document.getElementById('dropdown').className = 'dropdown1'
+        } else {
+            document.getElementById('dropdown').className = 'dropdown'
+        }
     }
 
     const {order, handleSubmit, formState: {errors, isValid}} = useForm({
@@ -340,10 +351,10 @@ function App() {
             <div className='header'>
                 <div className='navbar'>
                     <div className='navbar-content'>
-                        <a style={{color: "white", fontWeight: "bold", display: "table-cell", width: 117}}
+                        <a style={{color: "white", fontWeight: "bold", display: "table-cell", width: 117, position: "fixed"}}
                            href='/'><strong>Cloud-Sushi</strong></a>
-                        <div style={{display: "table-cell"}}>
-                            <ul style={{display: "inline", paddingLeft: 30}}>
+                        <div style={{display: "table-cell", position: "relative", left: '10%'}}>
+                            <ul className='menu-computer'>
                                 <li style={{display: "inline", paddingRight: 15}}>
                                     <a className='lishka' style={{color: "white", cursor: "pointer"}}
                                        onClick={handeClickRefAbout}>О нас</a>
@@ -361,6 +372,28 @@ function App() {
                                        onClick={handeClickRefContacts}>Контакты</a>
                                 </li>
                             </ul>
+                            <div className='menu-phone'>
+                                <MenuOutlined onClick={handleClickDropdown} style={{cursor: "pointer"}} />
+                                <div id='dropdown' className='dropdown'>
+                                    <div>
+                                        <a className='lishka' style={{color: "white", cursor: "pointer"}}
+                                       onClick={handeClickRefAbout}>О нас</a>
+                                    </div>
+                                    <div>
+                                        <a className='lishka' style={{color: "white", cursor: "pointer"}}
+                                           onClick={handeClickRefHits}>Хиты продаж</a>
+                                    </div>
+                                    <div>
+                                        <a className='lishka' style={{color: "white", cursor: "pointer"}}
+                                           onClick={handeClickRefMenu}>Меню</a>
+                                    </div>
+                                    <div>
+                                        <a className='lishka' style={{color: "white", cursor: "pointer"}}
+                                           onClick={handeClickRefContacts}>Контакты</a>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
