@@ -1,7 +1,7 @@
 import './App.css';
 import {Modal} from "antd";
 import {useForm} from 'react-hook-form'
-import {useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import Menu1 from "./Menu1";
 import {useSelector} from "react-redux";
 import Menu2 from "./Menu2";
@@ -14,6 +14,18 @@ import cube from '../src/Images/1/cube.png'
 
 
 function App() {
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = "//code.tidio.co/onov8scqh1gasttaxq5mlqgurqq7t0pi.js";
+        script.async = true;
+
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        }
+    }, []);
 
     const refAbout = useRef()
     const refHits = useRef()
