@@ -351,9 +351,9 @@ function App() {
             <div className='header'>
                 <div className='navbar'>
                     <div className='navbar-content'>
-                        <a style={{color: "white", fontWeight: "bold", display: "table-cell", width: 117, position: "fixed"}}
+                        <a style={{color: "white", fontWeight: "bold", display: "table-cell", width: 117, position: "absolute"}}
                            href='/'><strong>Cloud-Sushi</strong></a>
-                        <div style={{display: "table-cell", position: "relative", left: '10%'}}>
+                        <div style={{display: "table-cell", position: "relative", left: '12%'}}>
                             <ul className='menu-computer'>
                                 <li style={{display: "inline", paddingRight: 15}}>
                                     <a className='lishka' style={{color: "white", cursor: "pointer"}}
@@ -373,7 +373,7 @@ function App() {
                                 </li>
                             </ul>
                             <div className='menu-phone'>
-                                <MenuOutlined onClick={handleClickDropdown} style={{cursor: "pointer"}} />
+                                <MenuOutlined onClick={handleClickDropdown} style={{cursor: "pointer", zIndex: 1}} />
                                 <div id='dropdown' className='dropdown'>
                                     <div>
                                         <a className='lishka' style={{color: "white", cursor: "pointer"}}
@@ -411,9 +411,7 @@ function App() {
                         </div>
                         <div className='hits' onClick={handeClickRefHits}>
                             <a onClick={handeClickRefHits}
-                               style={{color: "white", position: "relative", top: '30%', cursor: "pointer"}}>Перейти к
-                                Хитам
-                                продаж</a>
+                               style={{color: "white", position: "relative", top: '30%', cursor: "pointer"}}>Перейти к Хитам продаж</a>
                         </div>
                         <div className='arrow' onClick={handeClickRefHits}>
                             <svg className='arrow-svg' fill='#ffffff' x="0px" y="0px" width="38.417px"
