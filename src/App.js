@@ -576,7 +576,7 @@ function App() {
                             <div>
                                 <input type="name"
                                        className="modal-info-block-input"
-                                       {...order('name', {required: 'Enter a name'})}/>
+                                />
                             </div>
                         </div>
                         <div className='modal-info-block'>
