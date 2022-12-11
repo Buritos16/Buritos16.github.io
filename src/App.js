@@ -353,7 +353,7 @@ function App() {
                     <div className='navbar-content'>
                         <a style={{color: "white", fontWeight: "bold", display: "table-cell", width: 117, position: "absolute"}}
                            href='/'><strong>Cloud-Sushi</strong></a>
-                        <div style={{display: "table-cell", position: "relative", left: '12%'}}>
+                        <div style={{display: "table-cell", position: "relative", left: '11%'}}>
                             <ul className='menu-computer'>
                                 <li style={{display: "inline", paddingRight: 15}}>
                                     <a className='lishka' style={{color: "white", cursor: "pointer"}}
@@ -397,7 +397,7 @@ function App() {
                         </div>
                     </div>
                 </div>
-                <div style={{borderTop: "1.2px solid #c0bebe", marginTop: "19.2%", position: "relative"}}/>
+
                 <div className='start'>
                     <div className='cloud-sushi'>Cloud-Sushi</div>
                     <div className='start-text'>
