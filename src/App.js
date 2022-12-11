@@ -72,6 +72,7 @@ function App() {
         setIsDropdonwOpen(!isDropdonwOpen)
         if(isDropdonwOpen) {
             document.getElementById('dropdown').className = 'dropdown1'
+            document.getElementById('icon').className = 'icon'
         } else {
             document.getElementById('dropdown').className = 'dropdown'
         }
@@ -351,9 +352,9 @@ function App() {
             <div className='header'>
                 <div className='navbar'>
                     <div className='navbar-content'>
-                        <a className='name' style={{color: "white", fontWeight: "bold", display: "table-cell", width: 117, position: "absolute", left: '12%'}}
+                        <a className='name' style={{color: "white", fontWeight: "bold", display: "table-cell", width: "auto",}}
                            href='/'><strong>Cloud-Sushi</strong></a>
-                        <div style={{display: "table-cell", position: "relative", left: '13%', maxWidth: '65%'}}>
+                        <div style={{display: "inline"}}>
                             <ul className='menu-computer'>
                                 <li style={{display: "inline", paddingRight: 15}}>
                                     <a className='lishka' style={{color: "white", cursor: "pointer"}}
@@ -374,7 +375,7 @@ function App() {
                             </ul>
                         </div>
                             <div className='menu-phone'>
-                                <MenuOutlined onClick={handleClickDropdown} style={{cursor: "pointer", zIndex: 1, textAlign: "center", position: "relative", left: '10%'}} />
+                                <MenuOutlined id='icon' onClick={handleClickDropdown} style={{float: "right", cursor: "pointer", zIndex: 1, position: "relative", left: '6%'}} />
                                 <div id='dropdown' className='dropdown' >
                                     <div>
                                         <a className='lishka' style={{color: "white", cursor: "pointer"}}
