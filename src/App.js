@@ -352,6 +352,9 @@ function App() {
             <div className='header'>
                 <div className='navbar'>
                     <div className='navbar-content'>
+                        <a href="https://freekassa.ru" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn.freekassa.ru/banners/big-dark-1.png" title="Receving payments"/>
+                        </a>
                         <a className='name' style={{color: "white", fontWeight: "bold", display: "table-cell", width: "auto",}}
                            href='/'><strong>Cloud-Sushi</strong></a>
                         <div style={{display: "inline"}}>
@@ -650,9 +653,7 @@ function App() {
                 </div>
             </Modal>
 
-            <a href="https://freekassa.ru" target="_blank" rel="noopener noreferrer">
-                <img src="https://cdn.freekassa.ru/banners/big-dark-1.png" title="Receving payments"/>
-            </a>
+
         </div>);
 }
 
