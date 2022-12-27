@@ -454,10 +454,6 @@ function App() {
                 }}>
                     «Хиты продаж»
                 </div>
-                <a href="https://freekassa.ru" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.freekassa.ru/banners/big-dark-1.png" title="Receving payments on the site"/>
-                </a>
-
 
                 <div className='sets'>
                     <div className='inner'>
